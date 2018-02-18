@@ -7,9 +7,25 @@
 //
 
 #include <iostream>
+#include "Sensor.hpp"
+#include "Date.hpp"
+#include "Device.hpp"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    //Sensor S;
+    //Sensor H(1);
+    Date D;
+    D.outputDate();
+    Device *pt = new Device;
+    cout << pt << endl;
+    cout << &pt << endl;
+    delete pt;
+//    Device F(D, ACCELEROMETR);
+//    cout << F.getDate().getDay() << endl;
+//    cout << F.getRange() << endl;
+    cout << "Hello, World!\n";
     return 0;
 }
