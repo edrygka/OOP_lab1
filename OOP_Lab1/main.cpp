@@ -15,9 +15,9 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Date *D;
+    SensorType ne = PROXY;
     Device H;
-    H.setDate(D);
+    H.setSenType(ne);
     cout << H << endl;
     cout << "Hello, World!\n";
     return 0;

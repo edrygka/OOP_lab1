@@ -27,7 +27,8 @@ public:
     Date getDate(){return *D;};
     Device &setDate(Date *_D);
     friend std::ostream& operator << (std::ostream& s, const Device& d);
-    //TODO: get/set to enum
+    SensorType getType(){return senType;};
+    Device &setSenType(SensorType _senType);
 };
 
 #endif /* Device_hpp */

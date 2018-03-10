@@ -29,10 +29,16 @@ Device::Device(const Device &src){
 
 Device::~Device(){
     cout << "Device destructor" << endl;
+    //delete D;
 }
 
 Device &Device::setDate(Date *_D){
     D = &(*_D);
+    return *this;
+}
+
+Device &Device::setSenType(SensorType _senType){
+    senType = _senType;
     return *this;
 }
 

@@ -44,7 +44,7 @@ Sensor::Sensor(const Sensor &src){
 }
 
 Sensor::~Sensor(){
-    std::cout << "Sensor destructor by default" << std::endl;
+    std::cout << "Sensor destructor" << std::endl;
 }
 
 Sensor &Sensor::setUnit(int _unit){
