@@ -18,14 +18,15 @@ enum SensorType {ACCELEROMETR = 1, PROXY, TEMPERATURE};
 class Device : public Sensor{
 private:
     SensorType senType;
-    Date D;
+    Date *D;
 public:
     Device();
-    Device(Date _D, SensorType _senType);
+    Device(Date *_D, SensorType _senType);
     Device(const Device &src);
     ~Device();
-    Date getDate(){return this->D;};
-    Device &setDate(Date _D);
+    Date getDate(){return *D;};
+    Device &setDate(Date *_D);
+    friend std::ostream& operator << (std::ostream& s, const Device& d);
     //TODO: get/set to enum
 };
 

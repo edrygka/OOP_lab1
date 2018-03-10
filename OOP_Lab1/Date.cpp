@@ -67,3 +67,7 @@ void Date::outputDate(){
     cout << "Day = " << day << "; Month = " << month << "; Year = " << year << endl;
 }
 
+ostream& operator << (ostream& s, const Date& d){
+    return s << "Date output\n Day: " << d.day << " Month: " << d.month << " Year: " << d.year << endl;
+}
+

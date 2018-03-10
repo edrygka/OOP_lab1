@@ -11,6 +11,7 @@
 		FA0FF5F120384BCA00392F1A /* Sensor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA0FF5EF20384BCA00392F1A /* Sensor.cpp */; };
 		FA0FF5F42038522E00392F1A /* Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA0FF5F22038522E00392F1A /* Device.cpp */; };
 		FA0FF5F7203853FA00392F1A /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA0FF5F5203853F900392F1A /* Date.cpp */; };
+		FA49DC51204D886200950037 /* General.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA49DC4F204D886200950037 /* General.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		FA0FF5F32038522E00392F1A /* Device.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Device.hpp; sourceTree = "<group>"; };
 		FA0FF5F5203853F900392F1A /* Date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
 		FA0FF5F6203853F900392F1A /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
+		FA49DC4F204D886200950037 /* General.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = General.cpp; sourceTree = "<group>"; };
+		FA49DC50204D886200950037 /* General.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = General.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				FA0FF5F32038522E00392F1A /* Device.hpp */,
 				FA0FF5F5203853F900392F1A /* Date.cpp */,
 				FA0FF5F6203853F900392F1A /* Date.hpp */,
+				FA49DC4F204D886200950037 /* General.cpp */,
+				FA49DC50204D886200950037 /* General.hpp */,
 			);
 			path = OOP_Lab1;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0FF5E82038423C00392F1A /* main.cpp in Sources */,
+				FA49DC51204D886200950037 /* General.cpp in Sources */,
 				FA0FF5F42038522E00392F1A /* Device.cpp in Sources */,
 				FA0FF5F120384BCA00392F1A /* Sensor.cpp in Sources */,
 				FA0FF5F7203853FA00392F1A /* Date.cpp in Sources */,
@@ -251,6 +257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
