@@ -11,23 +11,19 @@
 
 using namespace std;
 
-int Device::id = 0;
 
 Device::Device() : Sensor(2, 3, 'h'){
-    id++;
     this->senType = TEMPERATURE;
     this->D = Date();
     cout << "Device constructor by default " << endl;
 }
 
 Device::Device(SensorType _senType) : Sensor(3, 4, 'a'){
-    id++;
     this->senType = _senType;
     this->D = Date(21, 12, 1998);// My Birthday ;)
 }
 
 Device::Device(Date _D, SensorType _senType){
-    id++;
     this->senType = _senType;
     this->D = _D;
     cout << "Device constructor with params" << endl;
@@ -39,7 +35,6 @@ Device::Device(const Device &src){
 }
 
 Device::~Device(){
-    id--;
     cout << "Device destructor" << endl;
 }
 
