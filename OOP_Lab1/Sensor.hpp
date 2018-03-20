@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 class Sensor{
-private:
+protected:
     int unit;
     int range;
     char size;

@@ -10,37 +10,37 @@
 #include <iostream>
 
 Sensor::Sensor(){
-    unit = 1;
-    range = 1;
-    size = 'k';
+    this->unit = 1;
+    this->range = 1;
+    this->size = 'k';
     std::cout << "Sensor constructor by default" << std::endl;
 }
 
 Sensor::Sensor(int _unit){
-    unit = _unit;
-    range = 1;
-    size = 'k';
+    this->unit = _unit;
+    this->range = 1;
+    this->size = 'k';
     std::cout << "Sensor constructor with unit param" << std::endl;
 }
 
 Sensor::Sensor(int _unit, int _range){
-    unit = _unit;
-    range = _range;
-    size = 'k';
+    this->unit = _unit;
+    this->range = _range;
+    this->size = 'k';
     std::cout << "Sensor constructor with unit and range param" << std::endl;
 }
 
 Sensor::Sensor(int _unit, int _range, char _size){
-    unit = _unit;
-    range = _range;
-    size = _size;
+    this->unit = _unit;
+    this->range = _range;
+    this->size = _size;
     std::cout << "Sensor constructor with unit, range and size param" << std::endl;
 }
 
 Sensor::Sensor(const Sensor &src){
-    unit = src.unit;
-    range = src.range;
-    size = src.size;
+    this->unit = src.unit;
+    this->range = src.range;
+    this->size = src.size;
 }
 
 Sensor::~Sensor(){
@@ -48,16 +48,16 @@ Sensor::~Sensor(){
 }
 
 Sensor &Sensor::setUnit(int _unit){
-    unit = _unit;
+    this->unit = _unit;
     return *this;
 }
 
 Sensor &Sensor::setSize(char _size){
-    size = _size;
+    this->size = _size;
     return *this;
 }
 
 Sensor &Sensor::setRange(int _range){
-    range = _range;
+    this->range = _range;
     return *this;
 }

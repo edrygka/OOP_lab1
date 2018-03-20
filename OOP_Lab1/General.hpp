@@ -17,17 +17,20 @@ class General{
 private:
     static int summ;
     int genCount;
+    int size;
     Device *dev;
 public:
     General();
-    General(Device *d);
+    General(Device *newDev, int _size);
     General(const General &src);
     ~General();
+    General &setGen(Device *newDev, int _size);
     int getSum(){return this->summ;};
     int getCount(){return this->genCount;};
-    void showAllInfo();
-    void addDevice(Device *n);
-    void showInfo(int count);
+    int getGenSize(){return this->size;};
+    void addDevice(Device &newDev);
+    void delDevice(int _number);
+    void showInfo();
 };
 
 #endif /* General_hpp */

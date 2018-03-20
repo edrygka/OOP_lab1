@@ -10,15 +10,16 @@
 #include "Sensor.hpp"
 #include "Date.hpp"
 #include "Device.hpp"
+#include "General.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    SensorType ne = PROXY;
-    Device H;
-    H.setSenType(ne);
-    cout << H << endl;
+    General H;
+    SensorType S = ACCELEROMETR;
+    H.delDevice(4);
+    H.showInfo();
     cout << "Hello, World!\n";
     return 0;
 }
