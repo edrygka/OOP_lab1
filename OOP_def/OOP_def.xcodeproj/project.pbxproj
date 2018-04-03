@@ -11,6 +11,7 @@
 		FAC0B6F42066C1E700D4EF38 /* DataSets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC0B6F22066C1E700D4EF38 /* DataSets.cpp */; };
 		FAC0B6F72066C20900D4EF38 /* Weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC0B6F52066C20900D4EF38 /* Weather.cpp */; };
 		FAC0B6FA2066C3D400D4EF38 /* NationalCountryAgency.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAC0B6F82066C3D400D4EF38 /* NationalCountryAgency.cpp */; };
+		FAF033E32072E85000E01CAF /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAF033E12072E85000E01CAF /* Date.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		FAC0B6F62066C20900D4EF38 /* Weather.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Weather.hpp; sourceTree = "<group>"; };
 		FAC0B6F82066C3D400D4EF38 /* NationalCountryAgency.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NationalCountryAgency.cpp; sourceTree = "<group>"; };
 		FAC0B6F92066C3D400D4EF38 /* NationalCountryAgency.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NationalCountryAgency.hpp; sourceTree = "<group>"; };
+		FAF033E12072E85000E01CAF /* Date.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
+		FAF033E22072E85000E01CAF /* Date.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				FAC0B6F62066C20900D4EF38 /* Weather.hpp */,
 				FAC0B6F82066C3D400D4EF38 /* NationalCountryAgency.cpp */,
 				FAC0B6F92066C3D400D4EF38 /* NationalCountryAgency.hpp */,
+				FAF033E12072E85000E01CAF /* Date.cpp */,
+				FAF033E22072E85000E01CAF /* Date.hpp */,
 			);
 			path = OOP_def;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 				FAC0B6F72066C20900D4EF38 /* Weather.cpp in Sources */,
 				FAC0B6EC2066C18A00D4EF38 /* main.cpp in Sources */,
 				FAC0B6FA2066C3D400D4EF38 /* NationalCountryAgency.cpp in Sources */,
+				FAF033E32072E85000E01CAF /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
